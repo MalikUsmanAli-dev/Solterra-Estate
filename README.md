@@ -25,20 +25,16 @@ Solterra Estate is a cinematic, high-end hospitality website inspired by Europea
 
 Add screenshots here:
 
-```markdown
 ![Hero Section](./public/screenshots/hero.jpg)
 ![Experiences](./public/screenshots/experiences.jpg)
 ![Estate Story](./public/screenshots/story.jpg)
 ![Gallery](./public/screenshots/gallery.jpg)
 ![Contact](./public/screenshots/contact.jpg)
 ![Reservations](./public/screenshots/reservations.jpg)
-```
 
 ### Mobile Experience
 
-```markdown
 ![Mobile View](./public/screenshots/mobile.jpg)
-```
 
 ---
 
