@@ -335,7 +335,7 @@ Full Stack Developer | React Developer | Software Engineer
 
 GitHub: https://github.com/MAlikUsmanAli-dev
 
-Portfolio: https://yourportfolio.com
+Portfolio: https://malik-usman-ali-portfolio.netlify.app/
 
 LinkedIn: https://www.linkedin.com/in/malik-usman-ali-b9b571421
 
