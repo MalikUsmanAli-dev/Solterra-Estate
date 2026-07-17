@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ===== Solterra Estate design tokens ===== */
+  --color-ivory: #F7F4EF;
+  --color-champagne: #DCCFB8;
+  --color-beige: #EAE3D7;
+  --color-sage: #8D9583;
+  --color-sage-deep: #6E7563;
+  --color-charcoal: #2C2C2C;
+  --color-charcoal-soft: #3E3B36;
+  --color-terra: #A85C3C;
+  --color-terra-soft: #C17A56;
+  --color-gold: #B8975E;
+  --color-gold-light: #D9C79A;
+
+  --font-display: "Playfair Display", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (max-width: 900px), (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ivory);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Eyebrow label style used throughout */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-terra);
+  font-weight: 500;
+}
+
+/* The Golden Hour Line — signature scroll-reveal underline motif,
+   echoing the dusk horizon line that recurs across the estate photography */
+.horizon-line {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold) 50%, transparent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.horizon-line.in-view {
+  animation: draw-horizon 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes draw-horizon {
+  to { transform: scaleX(1); }
+}
+
+/* Custom scrollbar for that quiet-luxury feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-champagne);
+  border-radius: 8px;
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 1px solid var(--color-terra);
+  outline-offset: 3px;
+}
+
+.font-serif-display { font-family: var(--font-serif); }
