@@ -65,7 +65,7 @@ export default function Footer() {
         <HorizonLine className="my-12 opacity-40" />
 
         <div className="flex flex-col items-center justify-between gap-4 text-xs font-light text-[var(--color-ivory)]/45 md:flex-row">
-          <p>© {new Date().getFullYear()} Solterra Estate. A fictional brand, crafted for demonstration.</p>
+          <p>© {new Date().getFullYear()} Solterra Estate. A fictional brand, crafted by Usman Web Studio</p>
           <div className="flex gap-6">
             <span className="hover:text-[var(--color-ivory)]/80">Privacy</span>
             <span className="hover:text-[var(--color-ivory)]/80">Terms</span>
